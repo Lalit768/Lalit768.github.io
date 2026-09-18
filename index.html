@@ -103,13 +103,13 @@ footer{background:#07152f;color:#cbd5e1;padding:32px 5%}.foot{max-width:1150px;m
 <style>
 /* Mobile-first refinement */
 @media(max-width:700px){
-  .topbar{padding:5px 4px;font-size:10px}
+  .topbar{padding:6px 8px;font-size:10px}
   header{padding:11px 16px}
   .logo{font-size:20px}
   .hero{padding:38px 16px 30px}
   .hero .eyebrow{font-size:9px;padding:5px 9px}
-  .hero h1{font-size:29px;letter-spacing:-.8px}
-  .hero p{font-size:13px;line-height:1.55;margin:13px auto 19px}
+  .hero h1{font-size:31px;letter-spacing:-.8px}
+  .hero p{font-size:14px;line-height:1.55;margin:13px auto 19px}
   .hero .btn{padding:10px 12px;font-size:11px;margin:3px}
   .visual-panel{margin:22px auto 0;gap:10px}
   .visual-card{padding:14px;border-radius:17px;gap:10px}
@@ -130,12 +130,12 @@ footer{background:#07152f;color:#cbd5e1;padding:32px 5%}.foot{max-width:1150px;m
   .grid{gap:9px}
   .card{padding:13px;border-radius:15px;min-width:0}
   .card-illustration{width:52px;height:52px;border-radius:15px;font-size:28px;margin-bottom:8px}
-  .card h3{font-size:14px;line-height:1.25}.card p{font-size:10px;line-height:1.45}
-  .card a{font-size:10px}
+  .card h3{font-size:15px;line-height:1.3}.card p{font-size:11px;line-height:1.5}
+  .card a{font-size:11px}
   .guide-banner{padding:17px;border-radius:17px}.guide-banner h2{font-size:19px}.guide-banner .art{font-size:45px}
   .band{padding:20px;border-radius:18px}.band h2{font-size:21px}.band p{font-size:11px}.band .btn{font-size:10px;padding:9px 11px}
-  .articles{gap:9px}.article{padding:13px;border-radius:15px}.article h3{font-size:14px}.article p{font-size:10px;line-height:1.45}.article a{font-size:10px}
-  .trust{gap:9px}.trust .info{padding:14px}.trust .icon{font-size:24px}.trust .info h3{font-size:13px}.trust .info p{font-size:10px}
+  .articles{gap:10px}.article{padding:14px;border-radius:15px}.article h3{font-size:15px}.article p{font-size:11px;line-height:1.5}.article a{font-size:11px}
+  .trust{gap:9px}.trust .info{padding:14px}.trust .icon{font-size:24px}.trust .info h3{font-size:14px}.trust .info p{font-size:11px}
   .feature-strip{gap:8px}.feature-strip .info{padding:11px}.feature-strip .icon{width:38px;height:38px;font-size:18px}.feature-strip strong{font-size:11px}.feature-strip small{font-size:9px}
   .finance-visual{gap:8px}.finance-visual .mini-card{padding:13px;border-radius:14px}.mini-card .mini-art{font-size:28px}.mini-card strong{font-size:12px}.mini-card span{font-size:9px}
   .contact{padding:19px;border-radius:18px;gap:18px}.contact h2{font-size:24px}.contact p,.contact-list li{font-size:11px}.form{padding:15px;border-radius:14px}.form input,.form select,.form textarea{padding:10px;font-size:12px}.form button{padding:11px;font-size:11px}
@@ -277,6 +277,23 @@ body{
 .prof-footer{background:linear-gradient(120deg,#061538,#172554 55%,#0f766e);color:#dbeafe}.prof-footer .foot{padding-top:6px}.footer-badge{display:inline-block;margin-top:10px;padding:6px 10px;border:1px solid #ffffff25;border-radius:999px;font-size:10px;color:#dbeafe}
 @media(max-width:700px){.how-grid{grid-template-columns:1fr;gap:9px}.how-card{padding:16px}.how-num{width:34px;height:34px;font-size:12px}.how-card h3{font-size:14px}.how-card p{font-size:10px}.guide-category{grid-template-columns:repeat(3,1fr);gap:7px}.guide-category a{font-size:9px;padding:9px 4px}.guide-category span{font-size:19px}.guide-category a:nth-child(4),.guide-category a:nth-child(5){grid-column:span 1}.prof-footer{padding-bottom:75px}}
 </style>
+<style>
+/* Compact mobile quick access */
+.quick-access-section{padding-top:18px;padding-bottom:8px}
+.quick-access-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;color:var(--navy)}
+.quick-access-title strong{font-size:18px}.quick-access-title span{font-size:11px;color:var(--muted)}
+.quick-access-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:9px}
+.quick-access-grid a{background:#fff;border:1px solid #dce6f2;border-radius:14px;padding:11px 5px;text-align:center;text-decoration:none;color:#17366f;font-weight:800;font-size:11px;box-shadow:0 5px 15px #10213f08}
+.quick-access-grid a span{display:block;font-size:21px;line-height:24px;margin-bottom:3px}
+@media(max-width:700px){
+  .quick-access-section{padding:14px 12px 5px}
+  .quick-access-title strong{font-size:17px}
+  .quick-access-grid{gap:7px}
+  .quick-access-grid a{padding:10px 3px;font-size:10px;border-radius:12px}
+  .quick-access-grid a span{font-size:19px}
+}
+@media(max-width:430px){.quick-access-grid{grid-template-columns:repeat(3,1fr)}}
+</style>
 </head>
 <a class="skip-link" href="#home">Skip to content</a>
 <body>
@@ -290,6 +307,16 @@ body{
 <a class="btn blue" href="#insurance">🛡️ Insurance Services</a>
 <a class="btn green" href="#contact">💬 WhatsApp Enquiry</a>
 <a class="btn dark" href="tel:+919813491769">📞 Call Now</a><div class="hero-visual"><div class="illustration"><span class="emoji">🧑‍💼</span>Easy Guidance</div><div class="illustration"><span class="emoji">🛡️</span>Protection Focus</div><div class="illustration"><span class="emoji">📱</span>WhatsApp Support</div></div><div class="visual-panel"><div class="visual-card"><div class="big">🧑‍💼</div><div><h3>Simple Guidance for Everyday Finance</h3><p>Insurance aur financial topics ko easy Hindi mein samajhne ke liye ek clean knowledge space.</p></div></div><div class="visual-card"><div class="big">🛡️</div><div><h3>Safety First</h3><p>Sensitive information share karne se pehle safety checks zaroor dekhein.</p></div></div></div><div class="social-proof"><span>✓ Simple Hindi</span><span>✓ Educational Information</span><span>✓ Safety First</span><span>✓ Call & WhatsApp</span></div><div class="hero-stats"><div class="hero-stat"><strong>Insurance</strong><span>Car • Bike • Health • Life</span></div><div class="hero-stat"><strong>Finance Guides</strong><span>PF • Loan • FD • SIP • Card</span></div><div class="hero-stat"><strong>Direct Support</strong><span>Call & WhatsApp Enquiry</span></div></div></div></section>
+
+<section class="container quick-access-section" aria-label="Quick access">
+<div class="quick-access-title"><strong>Quick Access</strong><span>Popular topics</span></div>
+<div class="quick-access-grid">
+<a href="#finance"><span>🏦</span>PF Guide</a>
+<a href="#insurance"><span>🛡️</span>Insurance</a>
+<a href="loan-basics-guide.html"><span>💰</span>Loan</a>
+<a href="fd-basics-guide.html"><span>🏧</span>FD</a>
+<a href="sip-basics-guide.html"><span>📈</span>SIP</a>
+</div></section>
 
 <section class="container" id="profile">
 <div class="profile">
