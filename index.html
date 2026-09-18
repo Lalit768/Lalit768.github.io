@@ -294,10 +294,42 @@ body{
 }
 @media(max-width:430px){.quick-access-grid{grid-template-columns:repeat(3,1fr)}}
 </style>
+<style>
+/* Final mobile navigation and conversion polish */
+.mobile-nav{display:none}
+@media(max-width:700px){
+  .mobile-nav{
+    display:flex;position:sticky;top:47px;z-index:45;gap:6px;overflow-x:auto;
+    padding:8px 12px;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);
+    border-bottom:1px solid #dce6f2;box-shadow:0 3px 12px #10213f0a;
+    scrollbar-width:none
+  }
+  .mobile-nav::-webkit-scrollbar{display:none}
+  .mobile-nav a{
+    flex:none;text-decoration:none;color:#24436d;background:#f7faff;
+    border:1px solid #dbe5f2;border-radius:999px;padding:6px 11px;
+    font-size:10px;font-weight:900;white-space:nowrap
+  }
+  .mobile-nav a:active{background:#eaf2ff;color:#174ea6}
+  .service-card,.article,.how-card,.trust .info,.feature-strip .info{
+    box-shadow:0 5px 16px #10213f0b
+  }
+  .service-card:before{height:2px}
+  .form button{box-shadow:0 5px 14px #16a34a2b}
+  .mobile-bar a{min-height:58px}
+}
+</style>
 </head>
 <a class="skip-link" href="#home">Skip to content</a>
 <body>
 <div class="topbar"><div class="topbar-inner"><span>Finance Saathi • Simple Hindi Financial Information</span><a href="tel:+919813491769">📞 9813491769</a></div></div><header><div class="nav"><div class="logo">Finance <span>Saathi</span></div><nav><a href="#home">Home</a><a href="#insurance">Insurance</a><a href="#finance">Finance</a><a href="#guides">Guides</a><a href="#faq">FAQ</a><a href="#contact" class="nav-cta">Contact</a></nav></div></header>
+<div class="mobile-nav" aria-label="Mobile navigation">
+  <a href="#home">Home</a>
+  <a href="#insurance">Insurance</a>
+  <a href="#finance">Finance</a>
+  <a href="#guides">Guides</a>
+  <a href="#contact">Contact</a>
+</div>
 
 <main>
 <section class="hero" id="home"><div class="hero-glow"></div><div class="hero-inner">
