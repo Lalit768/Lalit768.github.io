@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://lalit768.github.io/index.html/sitemap.xml
+Sitemap: https://lalit768.github.io/sitemap.xml
