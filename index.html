@@ -87,6 +87,17 @@ footer{background:#07152f;color:#cbd5e1;padding:32px 5%}.foot{max-width:1150px;m
 .faq-note{margin-top:18px;text-align:center;color:var(--muted);font-size:12px}
 @media(max-width:700px){.nav-cta{display:none}.service-card p{min-height:0}}
 </style>
+<style>
+/* Next-level UX */
+.quick-actions{display:none}
+.fade-up{animation:fadeUp .55s ease both}@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.service-card:hover .card-illustration{transform:scale(1.05);transition:.2s}
+.card-illustration{transition:.2s}
+.mobile-bar{display:none}
+.social-proof{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:18px}.social-proof span{background:#fff;border:1px solid #dbe5f2;border-radius:999px;padding:7px 11px;font-size:11px;color:#48617f;font-weight:800}
+.contact-list{margin:18px 0 0;padding:0;list-style:none}.contact-list li{margin:9px 0;color:#e6efff;font-size:13px}
+@media(max-width:700px){body{padding-bottom:66px}.mobile-bar{display:flex;position:fixed;bottom:0;left:0;right:0;height:62px;background:#fff;border-top:1px solid #dbe5f2;z-index:55;box-shadow:0 -5px 20px #10213f18}.mobile-bar a{flex:1;text-align:center;text-decoration:none;font-size:11px;font-weight:900;color:#18366e;padding:9px 3px}.mobile-bar a span{display:block;font-size:21px;line-height:23px}.mobile-bar a.cta{background:#16a34a;color:#fff}.mobile-bar a.cta span{font-size:20px}}
+</style>
 </head>
 <body>
 <div class="topbar"><div class="topbar-inner"><span>Finance Saathi • Simple Hindi Financial Information</span><a href="tel:+919813491769">📞 9813491769</a></div></div><header><div class="nav"><div class="logo">Finance <span>Saathi</span></div><nav><a href="#home">Home</a><a href="#insurance">Insurance</a><a href="#finance">Finance</a><a href="#guides">Guides</a><a href="#faq">FAQ</a><a href="#contact" class="nav-cta">Contact</a></nav></div></header>
@@ -97,7 +108,7 @@ footer{background:#07152f;color:#cbd5e1;padding:32px 5%}.foot{max-width:1150px;m
 <p>Insurance, Loan, PF, Credit Card, FD aur SIP se judi useful information ek simple aur easy-to-understand platform par.</p>
 <a class="btn blue" href="#insurance">🛡️ Insurance Services</a>
 <a class="btn green" href="#contact">💬 WhatsApp Enquiry</a>
-<a class="btn dark" href="tel:+919813491769">📞 Call Now</a><div class="hero-visual"><div class="illustration"><span class="emoji">🧑‍💼</span>Easy Guidance</div><div class="illustration"><span class="emoji">🛡️</span>Protection Focus</div><div class="illustration"><span class="emoji">📱</span>WhatsApp Support</div></div><div class="visual-panel"><div class="visual-card"><div class="big">🧑‍💼</div><div><h3>Simple Guidance for Everyday Finance</h3><p>Insurance aur financial topics ko easy Hindi mein samajhne ke liye ek clean knowledge space.</p></div></div><div class="visual-card"><div class="big">🛡️</div><div><h3>Safety First</h3><p>Sensitive information share karne se pehle safety checks zaroor dekhein.</p></div></div></div><div class="hero-stats"><div class="hero-stat"><strong>Insurance</strong><span>Car • Bike • Health • Life</span></div><div class="hero-stat"><strong>Finance Guides</strong><span>PF • Loan • FD • SIP • Card</span></div><div class="hero-stat"><strong>Direct Support</strong><span>Call & WhatsApp Enquiry</span></div></div></div></section>
+<a class="btn dark" href="tel:+919813491769">📞 Call Now</a><div class="hero-visual"><div class="illustration"><span class="emoji">🧑‍💼</span>Easy Guidance</div><div class="illustration"><span class="emoji">🛡️</span>Protection Focus</div><div class="illustration"><span class="emoji">📱</span>WhatsApp Support</div></div><div class="visual-panel"><div class="visual-card"><div class="big">🧑‍💼</div><div><h3>Simple Guidance for Everyday Finance</h3><p>Insurance aur financial topics ko easy Hindi mein samajhne ke liye ek clean knowledge space.</p></div></div><div class="visual-card"><div class="big">🛡️</div><div><h3>Safety First</h3><p>Sensitive information share karne se pehle safety checks zaroor dekhein.</p></div></div></div><div class="social-proof"><span>✓ Simple Hindi</span><span>✓ Educational Information</span><span>✓ Safety First</span><span>✓ Call & WhatsApp</span></div><div class="hero-stats"><div class="hero-stat"><strong>Insurance</strong><span>Car • Bike • Health • Life</span></div><div class="hero-stat"><strong>Finance Guides</strong><span>PF • Loan • FD • SIP • Card</span></div><div class="hero-stat"><strong>Direct Support</strong><span>Call & WhatsApp Enquiry</span></div></div></div></section>
 
 <section class="container" id="profile">
 <div class="profile">
@@ -170,7 +181,7 @@ footer{background:#07152f;color:#cbd5e1;padding:32px 5%}.foot{max-width:1150px;m
 
 <section class="container" id="disclaimer"><div class="title"><h2>Disclaimer</h2></div><div class="info"><p>Finance Saathi par di gayi information general educational purpose ke liye hai aur ise personalised financial, tax ya legal advice nahi maana jana chahiye.</p><p>Insurance premium, coverage, exclusions, underwriting, eligibility aur claim decisions insurer ke rules, policy wording aur applicable regulations par depend karte hain.</p><p>Kisi bhi policy ya financial product ko lene se pehle official documents, terms aur applicable disclosures ko khud verify karein.</p></div></section>
 
-<a class="wa-float" href="https://wa.me/919813491769?text=Namaste%20Finance%20Saathi%20mujhe%20insurance%20enquiry%20chahiye." target="_blank" rel="noopener" aria-label="WhatsApp Insurance Enquiry">💬 WhatsApp <small>Enquiry</small></a>
+<div class="mobile-bar"><a href="tel:+919813491769"><span>📞</span>Call</a><a class="cta" href="https://wa.me/919813491769?text=Namaste%20Finance%20Saathi%20mujhe%20insurance%20enquiry%20chahiye." target="_blank" rel="noopener"><span>💬</span>WhatsApp</a><a href="#guides"><span>📚</span>Guides</a></div><a class="wa-float" href="https://wa.me/919813491769?text=Namaste%20Finance%20Saathi%20mujhe%20insurance%20enquiry%20chahiye." target="_blank" rel="noopener" aria-label="WhatsApp Insurance Enquiry">💬 WhatsApp <small>Enquiry</small></a>
 <footer><div class="foot"><div><strong>Finance Saathi</strong><br>Insurance & Financial Information</div><div><a href="#home">Home</a><a href="#insurance">Insurance</a><a href="#guides">Guides</a><a href="#faq">FAQ</a><a href="#privacy">Privacy</a><a href="#disclaimer">Disclaimer</a><a href="#contact">Contact</a></div></div></footer>
 <script>
 function sendWhatsApp(){const n=document.getElementById('name').value.trim(),p=document.getElementById('phone').value.trim(),t=document.getElementById('type').value,m=document.getElementById('message').value.trim();if(!n||!p||!t){alert('Please naam mobile number aur insurance type fill karein.');return}const msg='Namaste Finance Saathi, mujhe insurance enquiry chahiye.\n\nName: '+n+'\nMobile: '+p+'\nInsurance: '+t+'\nRequirement: '+m;window.open('https://wa.me/919813491769?text='+encodeURIComponent(msg),'_blank','noopener')}
