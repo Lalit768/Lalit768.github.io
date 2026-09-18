@@ -319,6 +319,16 @@ body{
   .mobile-bar a{min-height:58px}
 }
 </style>
+<style>
+/* Official sources section */
+.official-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.official-grid a{background:#fff;border:1px solid #dce6f2;border-radius:16px;padding:16px 10px;text-align:center;text-decoration:none;color:var(--navy);box-shadow:0 6px 18px #10213f08;transition:.2s}
+.official-grid a:hover{transform:translateY(-2px);box-shadow:0 10px 24px #10213f12}
+.official-grid span{display:block;font-size:28px;margin-bottom:5px}
+.official-grid strong{display:block;font-size:14px}
+.official-grid small{display:block;color:var(--muted);font-size:10px;margin-top:3px}
+@media(max-width:700px){.official-grid{grid-template-columns:repeat(2,1fr);gap:9px}.official-grid a{padding:13px 8px}.official-grid span{font-size:24px}.official-grid strong{font-size:13px}.official-grid small{font-size:9px}}
+</style>
 </head>
 <a class="skip-link" href="#home">Skip to content</a>
 <body>
@@ -413,6 +423,17 @@ body{
 </div></section>
 
 <section class="container" id="faq"><div class="title"><div class="section-kicker">Help Centre</div><h2>Frequently Asked Questions</h2><div class="section-divider"></div><p style="margin-top:9px">Common questions ka simple jawab</p></div><div class="policy faq-accordion"><details class="info" open><summary>Finance Saathi par kis tarah ki information milti hai?</summary><p>Insurance aur personal finance se judi general educational information simple Hindi mein di jaati hai.</p></details><details class="info" ><summary>Insurance enquiry kaise bhej sakte hain?</summary><p>Insurance Enquiry form se basic details bhejkar WhatsApp par enquiry submit ki ja sakti hai.</p></details><details class="info" ><summary>Kya insurance premium ya approval guaranteed hai?</summary><p>Nahi. Premium, eligibility, underwriting, policy terms aur approval applicable insurer rules aur official documents par depend karte hain.</p></details><details class="info" ><summary>Kya Aadhaar OTP ya card details enquiry mein share karni chahiye?</summary><p>Nahi. Aadhaar, PAN, OTP, PIN, CVV, password ya full banking/card credentials share na karein.</p></details></div></section>
+
+<section class="container" id="official-sources">
+<div class="title"><div class="section-kicker">Useful Links</div><h2>Official Sources</h2><div class="section-divider"></div>
+<p style="margin-top:9px">Important information ko official websites par bhi verify karein.</p></div>
+<div class="official-grid">
+<a href="https://www.epfindia.gov.in/" target="_blank" rel="noopener"><span>🏦</span><strong>EPFO</strong><small>PF & EPF information</small></a>
+<a href="https://irdai.gov.in/" target="_blank" rel="noopener"><span>🛡️</span><strong>IRDAI</strong><small>Insurance regulator</small></a>
+<a href="https://www.rbi.org.in/" target="_blank" rel="noopener"><span>🏛️</span><strong>RBI</strong><small>Banking information</small></a>
+<a href="https://www.sebi.gov.in/" target="_blank" rel="noopener"><span>📈</span><strong>SEBI</strong><small>Investment market information</small></a>
+</div>
+</section>
 
 <section class="container" id="disclaimer"><div class="title"><h2>Disclaimer</h2></div><div class="info"><p>Finance Saathi par di gayi information general educational purpose ke liye hai aur ise personalised financial, tax ya legal advice nahi maana jana chahiye.</p><p>Insurance premium, coverage, exclusions, underwriting, eligibility aur claim decisions insurer ke rules, policy wording aur applicable regulations par depend karte hain.</p><p>Kisi bhi policy ya financial product ko lene se pehle official documents, terms aur applicable disclosures ko khud verify karein.</p></div></section>
 
