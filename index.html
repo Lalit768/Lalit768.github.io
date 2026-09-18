@@ -197,6 +197,37 @@ nav a{transition:.2s}nav a:hover{color:#fde68a}
 .hero .eyebrow{background:linear-gradient(90deg,#dbeafe,#ede9fe,#cffafe);border-color:#c7d2fe;color:#3730a3}
 @media(max-width:700px){.topbar{background:linear-gradient(90deg,#07152f,#0f766e)}header{background:linear-gradient(100deg,#081b4b,#1e40af 60%,#0f766e)}.logo{font-size:21px}.hero{background:radial-gradient(circle at 15% 5%,#dbeafe 0,transparent 35%),radial-gradient(circle at 90% 18%,#fce7f3 0,transparent 30%),linear-gradient(180deg,#f7fbff,#eef6ff 65%,#f0fdf4)}}
 </style>
+<style>
+/* Compact premium sections */
+@media(max-width:700px){
+  .hero{padding-bottom:24px}
+  .hero-stats{margin-top:10px}
+  .container{padding-top:27px;padding-bottom:27px}
+  .profile{margin-top:0}
+  .articles{grid-template-columns:repeat(2,1fr);gap:8px}
+  .article{padding:12px;min-height:135px}
+  .article .tag{font-size:8px;padding:4px 7px}
+  .article h3{font-size:12px;margin:7px 0;line-height:1.3}
+  .article p{font-size:9px;line-height:1.4;margin:5px 0}
+  .article a{font-size:9px}
+  .guide-filter{gap:5px;margin-bottom:13px}
+  .guide-filter span{font-size:8px;padding:5px 7px}
+  .trust{grid-template-columns:repeat(2,1fr);gap:8px}
+  .trust .info{padding:12px 9px}
+  .trust .info h3{font-size:11px;margin:5px 0}
+  .trust .info p{font-size:9px;line-height:1.35}
+  .trust .icon{font-size:21px}
+  .policy{gap:8px}
+  .policy .info{padding:13px}
+  #privacy .policy,#faq .policy{grid-template-columns:1fr}
+  #privacy .info,#faq .info{padding:14px}
+  .faq-note{font-size:10px}
+}
+</style>
+<style>
+.faq-accordion details summary{cursor:pointer;list-style:none;font-weight:900;color:var(--navy);font-size:14px;display:flex;justify-content:space-between;gap:10px}.faq-accordion details summary::-webkit-details-marker{display:none}.faq-accordion details summary:after{content:"+";color:var(--blue);font-size:20px;line-height:1}.faq-accordion details[open] summary:after{content:"−"}.faq-accordion details p{margin-bottom:0}
+@media(max-width:700px){.faq-accordion details summary{font-size:12px}}
+</style>
 </head>
 <a class="skip-link" href="#home">Skip to content</a>
 <body>
@@ -273,12 +304,7 @@ nav a{transition:.2s}nav a:hover{color:#fde68a}
 <div class="info"><h3>Third-Party Services</h3><p>WhatsApp jaise third-party services ki apni privacy policies aur terms hoti hain. Sensitive information sirf official and secure channels par hi provide karein jab genuinely required ho.</p></div>
 </div></section>
 
-<section class="container" id="faq"><div class="title"><div class="section-kicker">Help Centre</div><h2>Frequently Asked Questions</h2><div class="section-divider"></div><p style="margin-top:9px">Common questions ka simple jawab</p></div><div class="policy">
-<div class="info"><h3>Finance Saathi par kis tarah ki information milti hai?</h3><p>Insurance aur personal finance se judi general educational information simple Hindi mein di jaati hai.</p></div>
-<div class="info"><h3>Insurance enquiry kaise bhej sakte hain?</h3><p>Insurance Enquiry form se basic details bhejkar WhatsApp par enquiry submit ki ja sakti hai.</p></div>
-<div class="info"><h3>Kya insurance premium ya approval guaranteed hai?</h3><p>Nahi. Premium, eligibility, underwriting, policy terms aur approval applicable insurer rules aur official documents par depend karte hain.</p></div>
-<div class="info"><h3>Kya Aadhaar OTP ya card details enquiry mein share karni chahiye?</h3><p>Nahi. Aadhaar, PAN, OTP, PIN, CVV, password ya full banking/card credentials share na karein.</p></div>
-</div><div class="faq-note">Information is general and educational. Please verify product terms with official documents before making a decision.</div></section>
+<section class="container" id="faq"><div class="title"><div class="section-kicker">Help Centre</div><h2>Frequently Asked Questions</h2><div class="section-divider"></div><p style="margin-top:9px">Common questions ka simple jawab</p></div><div class="policy faq-accordion"><details class="info" open><summary>Finance Saathi par kis tarah ki information milti hai?</summary><p>Insurance aur personal finance se judi general educational information simple Hindi mein di jaati hai.</p></details><details class="info" ><summary>Insurance enquiry kaise bhej sakte hain?</summary><p>Insurance Enquiry form se basic details bhejkar WhatsApp par enquiry submit ki ja sakti hai.</p></details><details class="info" ><summary>Kya insurance premium ya approval guaranteed hai?</summary><p>Nahi. Premium, eligibility, underwriting, policy terms aur approval applicable insurer rules aur official documents par depend karte hain.</p></details><details class="info" ><summary>Kya Aadhaar OTP ya card details enquiry mein share karni chahiye?</summary><p>Nahi. Aadhaar, PAN, OTP, PIN, CVV, password ya full banking/card credentials share na karein.</p></details></div></section>
 
 <section class="container" id="disclaimer"><div class="title"><h2>Disclaimer</h2></div><div class="info"><p>Finance Saathi par di gayi information general educational purpose ke liye hai aur ise personalised financial, tax ya legal advice nahi maana jana chahiye.</p><p>Insurance premium, coverage, exclusions, underwriting, eligibility aur claim decisions insurer ke rules, policy wording aur applicable regulations par depend karte hain.</p><p>Kisi bhi policy ya financial product ko lene se pehle official documents, terms aur applicable disclosures ko khud verify karein.</p></div></section>
 
