@@ -329,7 +329,52 @@ body{
 .official-grid small{display:block;color:var(--muted);font-size:10px;margin-top:3px}
 @media(max-width:700px){.official-grid{grid-template-columns:repeat(2,1fr);gap:9px}.official-grid a{padding:13px 8px}.official-grid span{font-size:24px}.official-grid strong{font-size:13px}.official-grid small{font-size:9px}}
 </style>
-</head>
+<style>
+/* HD Color Finish - vivid but professional */
+:root{
+ --navy:#071a49;--blue:#155eef;--cyan:#0891b2;--green:#12a150;
+ --gold:#f5b700;--purple:#7c3aed;--pink:#db2777;--orange:#ea580c;
+ --ink:#10213f;--muted:#5f708a;--bg:#f4f8ff;--line:#d9e4f2;
+}
+body{background:
+ radial-gradient(circle at 0% 10%,rgba(37,99,235,.07),transparent 24%),
+ radial-gradient(circle at 100% 35%,rgba(6,182,212,.06),transparent 22%),
+ linear-gradient(180deg,#f7faff 0%,#ffffff 45%,#f5f9ff 100%);color:var(--ink)}
+header{background:linear-gradient(110deg,#061538,#123b8f 62%,#075985);box-shadow:0 5px 24px rgba(7,26,73,.22)}
+.hero{background:
+ radial-gradient(circle at 10% 15%,rgba(59,130,246,.22),transparent 30%),
+ radial-gradient(circle at 90% 20%,rgba(34,211,238,.18),transparent 28%),
+ linear-gradient(135deg,#eaf3ff 0%,#ffffff 48%,#ecfdf5 100%)}
+.hero h1 span{background:linear-gradient(90deg,#155eef,#0891b2,#0f766e);-webkit-background-clip:text;background-clip:text}
+.eyebrow{background:linear-gradient(90deg,#e0ecff,#e6fffa);border-color:#b9d4ff;color:#12459a}
+.card,.article,.info,.how-card,.official-grid a,.guide-category a{box-shadow:0 8px 24px rgba(16,33,63,.08)}
+.card:nth-child(4n+1) .card-illustration{background:linear-gradient(135deg,#dbeafe,#e0f2fe)}
+.card:nth-child(4n+2) .card-illustration{background:linear-gradient(135deg,#dcfce7,#d1fae5)}
+.card:nth-child(4n+3) .card-illustration{background:linear-gradient(135deg,#fce7f3,#fae8ff)}
+.card:nth-child(4n) .card-illustration{background:linear-gradient(135deg,#fef3c7,#ffedd5)}
+.service-card:nth-child(4n+1):before{background:linear-gradient(90deg,#155eef,#38bdf8)}
+.service-card:nth-child(4n+2):before{background:linear-gradient(90deg,#059669,#22c55e)}
+.service-card:nth-child(4n+3):before{background:linear-gradient(90deg,#db2777,#a855f7)}
+.service-card:nth-child(4n):before{background:linear-gradient(90deg,#ea580c,#f5b700)}
+.band{background:linear-gradient(120deg,#061538,#155eef 55%,#0e7490)}
+.contact{background:linear-gradient(135deg,#0b2470,#155eef 58%,#0f766e)}
+.how-num{background:linear-gradient(135deg,#155eef,#06b6d4);box-shadow:0 6px 15px rgba(21,94,239,.25)}
+.guide-category a:nth-child(1){border-top:3px solid #155eef}.guide-category a:nth-child(2){border-top:3px solid #db2777}
+.guide-category a:nth-child(3){border-top:3px solid #ea580c}.guide-category a:nth-child(4){border-top:3px solid #059669}.guide-category a:nth-child(5){border-top:3px solid #7c3aed}
+.official-grid a:nth-child(1){border-top:3px solid #155eef}.official-grid a:nth-child(2){border-top:3px solid #059669}
+.official-grid a:nth-child(3){border-top:3px solid #7c3aed}.official-grid a:nth-child(4){border-top:3px solid #ea580c}
+.mobile-nav a:nth-child(1){border-color:#bfd5ff}.mobile-nav a:nth-child(2){border-color:#b7ead0}
+.mobile-nav a:nth-child(3){border-color:#fed0b5}.mobile-nav a:nth-child(4){border-color:#dec8ff}
+a{transition:color .2s,transform .2s,box-shadow .2s}
+footer.prof-footer{background:linear-gradient(120deg,#04122f,#102a68 55%,#075e59)}
+@media(max-width:700px){
+ .hero{background:
+  radial-gradient(circle at 0 0,rgba(59,130,246,.16),transparent 32%),
+  radial-gradient(circle at 100% 15%,rgba(34,211,238,.13),transparent 28%),
+  linear-gradient(180deg,#eef6ff,#fff 62%,#effcf6)}
+ .card,.article,.info,.how-card{box-shadow:0 6px 18px rgba(16,33,63,.07)}
+}
+</style></head>
 <a class="skip-link" href="#home">Skip to content</a>
 <body>
 <div class="topbar"><div class="topbar-inner"><span>Finance Saathi • Simple Hindi Financial Information</span><a href="tel:+919813491769">📞 9813491769</a></div></div><header><div class="nav"><div class="logo">Finance <span>Saathi</span></div><nav><a href="#home">Home</a><a href="#insurance">Insurance</a><a href="#finance">Finance</a><a href="#guides">Guides</a><a href="#faq">FAQ</a><a href="#contact" class="nav-cta">Contact</a></nav></div></header>
