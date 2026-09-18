@@ -245,6 +245,31 @@ nav a{transition:.2s}nav a:hover{color:#fde68a}
   .notice,.warn{font-size:10.5px;line-height:1.5}
 }
 </style>
+<style>
+/* Premium page background */
+body{
+  background:
+    radial-gradient(circle at 8% 12%,rgba(59,130,246,.10),transparent 24%),
+    radial-gradient(circle at 92% 28%,rgba(124,58,237,.08),transparent 23%),
+    radial-gradient(circle at 12% 58%,rgba(16,185,129,.07),transparent 22%),
+    radial-gradient(circle at 88% 78%,rgba(245,158,11,.06),transparent 22%),
+    linear-gradient(180deg,#f8fbff 0%,#f4f8ff 38%,#f8f7ff 70%,#f5fbf8 100%);
+  background-attachment:fixed;
+}
+.container{position:relative}
+.container:before{content:"";position:absolute;inset:8px 3% auto;height:1px;background:linear-gradient(90deg,transparent,#dbe7f5,transparent);opacity:.7}
+.card,.article,.info,.profile,.guide-banner,.mini-card{background:rgba(255,255,255,.94);backdrop-filter:blur(5px)}
+@media(max-width:700px){
+  body{background:
+    radial-gradient(circle at 5% 10%,rgba(59,130,246,.10),transparent 25%),
+    radial-gradient(circle at 95% 35%,rgba(124,58,237,.07),transparent 24%),
+    radial-gradient(circle at 5% 68%,rgba(16,185,129,.07),transparent 25%),
+    linear-gradient(180deg,#f8fbff,#f4f8ff 48%,#f8f7ff 76%,#f5fbf8);
+    background-attachment:scroll;
+  }
+  .container:before{inset:4px 10% auto}
+}
+</style>
 </head>
 <a class="skip-link" href="#home">Skip to content</a>
 <body>
