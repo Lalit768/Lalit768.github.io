@@ -75,12 +75,24 @@ footer{background:#07152f;color:#cbd5e1;padding:32px 5%}.foot{max-width:1150px;m
 .guide-cta{margin-top:20px;background:linear-gradient(135deg,#eff6ff,#ecfeff);border:1px solid #d6e8fa;border-radius:20px;padding:20px;display:flex;align-items:center;justify-content:space-between;gap:15px}.guide-cta .art{font-size:54px}.guide-cta h3{margin:0;color:var(--navy)}
 @media(max-width:700px){.visual-panel{grid-template-columns:1fr}.finance-visual{grid-template-columns:repeat(2,1fr)}.visual-card .big{font-size:48px;min-width:60px}.guide-cta{display:block}.guide-cta .art{margin-top:8px}}
 </style>
+<style>
+/* Final premium polish */
+.section-divider{width:58px;height:4px;border-radius:99px;background:linear-gradient(90deg,#2563eb,#06b6d4);margin:10px auto 0}
+.hero .eyebrow{box-shadow:0 5px 15px #2563eb14}
+.nav-cta{background:#16a34a!important;padding:8px 12px;border-radius:9px}
+.stat-icon{font-size:20px;margin-right:4px}.trust-mark{display:inline-flex;align-items:center;gap:6px;font-size:11px;color:#526b89;font-weight:800;margin-top:14px}
+.service-card h3{font-size:19px}.service-card p{min-height:46px}
+.guide-filter{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:0 0 22px}.guide-filter span{padding:7px 12px;border-radius:999px;background:#fff;border:1px solid #dce6f2;color:#4a6382;font-size:11px;font-weight:800}
+.contact .eyebrow{background:#ffffff18;color:#fff;border-color:#ffffff30}.contact .badges .badge{background:#ffffff10;color:#e5efff;border-color:#ffffff25}
+.faq-note{margin-top:18px;text-align:center;color:var(--muted);font-size:12px}
+@media(max-width:700px){.nav-cta{display:none}.service-card p{min-height:0}}
+</style>
 </head>
 <body>
-<div class="topbar"><div class="topbar-inner"><span>Finance Saathi • Simple Hindi Financial Information</span><a href="tel:+919813491769">📞 9813491769</a></div></div><header><div class="nav"><div class="logo">Finance <span>Saathi</span></div><nav><a href="#home">Home</a><a href="#insurance">Insurance</a><a href="#finance">Finance</a><a href="#guides">Guides</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></nav></div></header>
+<div class="topbar"><div class="topbar-inner"><span>Finance Saathi • Simple Hindi Financial Information</span><a href="tel:+919813491769">📞 9813491769</a></div></div><header><div class="nav"><div class="logo">Finance <span>Saathi</span></div><nav><a href="#home">Home</a><a href="#insurance">Insurance</a><a href="#finance">Finance</a><a href="#guides">Guides</a><a href="#faq">FAQ</a><a href="#contact" class="nav-cta">Contact</a></nav></div></header>
 
 <section class="hero" id="home"><div class="hero-glow"></div><div class="hero-inner">
-<div class="eyebrow">🛡️ Simple • Useful • Safety First</div>
+<div class="eyebrow">🛡️ SIMPLE • USEFUL • SAFETY FIRST</div>
 <h1>Insurance & Financial Information<br><span>Simple Hindi Mein</span></h1>
 <p>Insurance, Loan, PF, Credit Card, FD aur SIP se judi useful information ek simple aur easy-to-understand platform par.</p>
 <a class="btn blue" href="#insurance">🛡️ Insurance Services</a>
@@ -94,7 +106,7 @@ footer{background:#07152f;color:#cbd5e1;padding:32px 5%}.foot{max-width:1150px;m
 </div>
 </section>
 
-<section class="container" id="insurance"><div class="title"><div class="section-kicker">Protection Solutions</div><h2>Insurance Services</h2><p>Apni requirement ke hisaab se enquiry bhejein.</p></div>
+<section class="container" id="insurance"><div class="title"><div class="section-kicker">Protection Solutions</div><h2>Insurance Services</h2><div class="section-divider"></div><p style="margin-top:9px">Apni requirement ke hisaab se enquiry bhejein.</p></div>
 <div class="grid">
 <div class="card service-card"><div class="card-illustration">🚗</div><h3>Car Insurance</h3><p>Car insurance aur renewal ki basic information.</p><a href="#contact">Enquiry →</a></div>
 <div class="card"><div class="icon">🏍️</div><h3>Bike Insurance</h3><p>Two-wheeler insurance related information.</p><a href="#contact">Enquiry →</a></div>
@@ -102,7 +114,7 @@ footer{background:#07152f;color:#cbd5e1;padding:32px 5%}.foot{max-width:1150px;m
 <div class="card service-card"><div class="card-illustration">🛡️</div><h3>Term / Life Insurance</h3><p>Life protection aur term insurance basics.</p><a href="#contact">Enquiry →</a></div>
 </div></section>
 
-<section class="container" id="finance"><div class="title"><div class="section-kicker">Knowledge Centre</div><h2>Financial Information</h2><p>Important financial topics easy language mein.</p></div>
+<section class="container" id="finance"><div class="title"><div class="section-kicker">Knowledge Centre</div><h2>Financial Information</h2><div class="section-divider"></div><p style="margin-top:9px">Important financial topics easy language mein.</p></div>
 <div class="grid">
 <div class="card"><div class="icon">💰</div><h3>Loans</h3><p>Personal, Home, Education aur Business Loan basics.</p><a href="loan-basics-guide.html">Guide Padhein →</a></div>
 <div class="card"><div class="icon">💳</div><h3>Credit Card</h3><p>Bill, due date, fees, rewards aur safety.</p><a href="credit-card-bill-guide.html">Guide Padhein →</a></div>
@@ -112,8 +124,8 @@ footer{background:#07152f;color:#cbd5e1;padding:32px 5%}.foot{max-width:1150px;m
 
 <section class="container"><div class="guide-banner"><div><div class="section-kicker">Quick & Simple</div><h2 style="margin:0;color:var(--navy)">Need help choosing an insurance enquiry?</h2><p style="color:var(--muted);margin:7px 0 12px">Basic requirement share karein aur direct WhatsApp support lein.</p><a class="btn green" href="#contact">💬 Start Enquiry</a></div><div class="art">🧑‍💻📋</div></div></section><section class="container"><div class="band"><div><h2>Insurance Enquiry WhatsApp Par</h2><p>Basic details submit karein aur enquiry WhatsApp par bhejein.</p><a class="btn green" href="#contact">Enquiry Bhejein</a><a class="btn outline" href="tel:+919813491769">Call Now</a></div><div class="band-icon">📲</div></div></section>
 
-<section class="container" id="guides"><div class="title"><h2>Popular Guides</h2><p>Beginners ke liye useful topics</p></div>
-<div class="articles">
+<section class="container" id="guides"><div class="title"><div class="section-kicker">Knowledge Hub</div><h2>Popular Guides</h2><div class="section-divider"></div><p style="margin-top:9px">Beginners ke liye useful topics</p></div>
+<div class="guide-filter"><span>📘 PF</span><span>💳 Credit Card</span><span>💰 Loan</span><span>🏦 FD</span><span>📈 SIP</span><span>🛡️ Insurance</span></div><div class="articles">
 <div class="article"><span class="tag">PF</span><h3>PF Withdrawal Guide</h3><p>UAN, KYC aur PF claim process ki basic guide.</p><a href="pf-withdrawal-guide.html">Guide Padhein →</a></div>
 <div class="article"><span class="tag">PF</span><h3>PF Balance Kaise Check Karein?</h3><p>EPFO passbook aur balance check karne ki basic guide.</p><a href="pf-balance-check-guide.html">Guide Padhein →</a></div>
 <div class="article"><span class="tag">PF</span><h3>PF Mein Name Correction</h3><p>UAN details correction ki basic information.</p><a href="pf-name-correction-guide.html">Guide Padhein →</a></div>
@@ -125,14 +137,14 @@ footer{background:#07152f;color:#cbd5e1;padding:32px 5%}.foot{max-width:1150px;m
 <div class="article"><span class="tag">INVESTMENT</span><h3>SIP Investment Kaise Kaam Karta Hai?</h3><p>Periodic mutual fund investment ko simple language mein samjhein.</p><a href="sip-investment-guide.html">Guide Padhein →</a></div>
 </div></section>
 
-<section class="container"><div class="title"><div class="section-kicker">Our Approach</div><h2>Why Finance Saathi?</h2><p>Information ko simple aur transparent rakhne ki koshish</p></div><div class="feature-strip"><div class="info"><div class="icon">🧑‍🏫</div><div><strong>Easy to Understand</strong><br><small>Simple language</small></div></div><div class="info"><div class="icon">🔐</div><div><strong>Safety Minded</strong><br><small>Private details protected</small></div></div><div class="info"><div class="icon">💬</div><div><strong>Direct Contact</strong><br><small>Call & WhatsApp</small></div></div></div><div style="height:16px"></div><div class="trust">
+<section class="container"><div class="title"><div class="section-kicker">Our Approach</div><h2>Why Finance Saathi?</h2><div class="section-divider"></div><p style="margin-top:9px">Information ko simple aur transparent rakhne ki koshish</p></div><div class="feature-strip"><div class="info"><div class="icon">🧑‍🏫</div><div><strong>Easy to Understand</strong><br><small>Simple language</small></div></div><div class="info"><div class="icon">🔐</div><div><strong>Safety Minded</strong><br><small>Private details protected</small></div></div><div class="info"><div class="icon">💬</div><div><strong>Direct Contact</strong><br><small>Call & WhatsApp</small></div></div></div><div style="height:16px"></div><div class="trust">
 <div class="info"><div class="icon">📖</div><h3>Simple Hindi</h3><p>Complex financial terms ko beginners ke liye easy language mein samjhaya gaya hai.</p></div>
 <div class="info"><div class="icon">🔎</div><h3>Clear Information</h3><p>Policy terms, fees, eligibility aur applicable rules ko verify karne ki importance clearly batayi jaati hai.</p></div>
 <div class="info"><div class="icon">🛡️</div><h3>Safety First</h3><p>OTP, PIN, CVV, password aur sensitive financial credentials share na karne ki warning di jaati hai.</p></div>
 <div class="info"><div class="icon">📞</div><h3>Direct Enquiry</h3><p>Insurance requirement ke liye visitor Call ya WhatsApp ke through enquiry bhej sakta hai.</p></div>
 </div></section>
 
-<section class="container"><div class="title"><h2>About Finance Saathi</h2></div><div class="info"><p>Finance Saathi ek informational platform hai jahan insurance aur personal finance se judi educational information simple language mein di jaati hai.</p><p>Insurance enquiry ke liye visitor Call ya WhatsApp ke through contact kar sakta hai.</p></div></section>
+<section class="container"><div class="title"><div class="section-kicker">About Us</div><h2>Finance Saathi</h2><div class="section-divider"></div></div><div class="info"><p>Finance Saathi ek informational platform hai jahan insurance aur personal finance se judi educational information simple language mein di jaati hai.</p><p>Insurance enquiry ke liye visitor Call ya WhatsApp ke through contact kar sakta hai.</p></div></section>
 
 <section class="container"><div class="band"><div><h2>Finance Saathi Share Karein</h2><p>Useful financial information kisi family member ya friend ke saath share karein.</p><a class="btn green" href="https://wa.me/?text=Finance%20Saathi%20-%20Insurance%20aur%20Financial%20Information%20https%3A%2F%2Flalit768.github.io%2F" target="_blank" rel="noopener">WhatsApp Share</a><a class="btn outline" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flalit768.github.io%2F" target="_blank" rel="noopener">Facebook Share</a></div><div class="band-icon">📤</div></div></section>
 
@@ -142,19 +154,19 @@ footer{background:#07152f;color:#cbd5e1;padding:32px 5%}.foot{max-width:1150px;m
 <div class="warn"><strong>Safety:</strong> Enquiry form ya WhatsApp par Aadhaar, PAN, bank account number, card number, CVV, PIN, OTP, password ya kisi bhi sensitive credential ko share na karein.</div>
 </section>
 
-<section class="container" id="privacy"><div class="title"><h2>Privacy Policy</h2><p>Aapki enquiry information ke baare mein basic policy</p></div><div class="policy">
+<section class="container" id="privacy"><div class="title"><div class="section-kicker">Privacy</div><h2>Privacy Policy</h2><div class="section-divider"></div><p style="margin-top:9px">Aapki enquiry information ke baare mein basic policy</p></div><div class="policy">
 <div class="info"><h3>Information We Collect</h3><p>Jab aap enquiry submit karte hain tab aapka naam, mobile number, insurance type aur requirement jaise details voluntarily provide ki ja sakti hain.</p></div>
 <div class="info"><h3>How We Use It</h3><p>Enquiry ka jawab dene aur requested insurance information ya follow-up provide karne ke liye use kiya ja sakta hai.</p></div>
 <div class="info"><h3>What You Should Not Share</h3><p>Aadhaar, PAN, OTP, PIN, CVV, passwords ya full banking/card credentials enquiry form mein submit na karein.</p></div>
 <div class="info"><h3>Third-Party Services</h3><p>WhatsApp jaise third-party services ki apni privacy policies aur terms hoti hain. Sensitive information sirf official and secure channels par hi provide karein jab genuinely required ho.</p></div>
 </div></section>
 
-<section class="container" id="faq"><div class="title"><h2>Frequently Asked Questions</h2><p>Common questions ka simple jawab</p></div><div class="policy">
+<section class="container" id="faq"><div class="title"><div class="section-kicker">Help Centre</div><h2>Frequently Asked Questions</h2><div class="section-divider"></div><p style="margin-top:9px">Common questions ka simple jawab</p></div><div class="policy">
 <div class="info"><h3>Finance Saathi par kis tarah ki information milti hai?</h3><p>Insurance aur personal finance se judi general educational information simple Hindi mein di jaati hai.</p></div>
 <div class="info"><h3>Insurance enquiry kaise bhej sakte hain?</h3><p>Insurance Enquiry form se basic details bhejkar WhatsApp par enquiry submit ki ja sakti hai.</p></div>
 <div class="info"><h3>Kya insurance premium ya approval guaranteed hai?</h3><p>Nahi. Premium, eligibility, underwriting, policy terms aur approval applicable insurer rules aur official documents par depend karte hain.</p></div>
 <div class="info"><h3>Kya Aadhaar OTP ya card details enquiry mein share karni chahiye?</h3><p>Nahi. Aadhaar, PAN, OTP, PIN, CVV, password ya full banking/card credentials share na karein.</p></div>
-</div></section>
+</div><div class="faq-note">Information is general and educational. Please verify product terms with official documents before making a decision.</div></section>
 
 <section class="container" id="disclaimer"><div class="title"><h2>Disclaimer</h2></div><div class="info"><p>Finance Saathi par di gayi information general educational purpose ke liye hai aur ise personalised financial, tax ya legal advice nahi maana jana chahiye.</p><p>Insurance premium, coverage, exclusions, underwriting, eligibility aur claim decisions insurer ke rules, policy wording aur applicable regulations par depend karte hain.</p><p>Kisi bhi policy ya financial product ko lene se pehle official documents, terms aur applicable disclosures ko khud verify karein.</p></div></section>
 
