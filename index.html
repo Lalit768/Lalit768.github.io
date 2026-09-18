@@ -41,7 +41,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(8,27,75,.96);backdrop-fi
 .articles{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.article{transition:.2s}.article:hover{transform:translateY(-3px);box-shadow:0 12px 28px #10213f13}.tag{display:inline-block;background:#eaf2ff;color:var(--blue);border-radius:999px;padding:4px 9px;font-size:10px;font-weight:900}
 .contact{background:linear-gradient(135deg,#102e78,#2563eb);color:#fff;border-radius:24px;padding:32px;display:grid;grid-template-columns:1fr 1fr;gap:28px;box-shadow:0 14px 35px #174ea626}.contact h2{font-size:31px;margin-top:0}.form{background:#fff;color:var(--ink);border-radius:17px;padding:20px}.form h3{color:var(--navy);margin-top:0}.form input,.form select,.form textarea{width:100%;padding:12px;margin:5px 0 9px;border:1px solid #d5deea;border-radius:10px;font:inherit}.form button{width:100%;padding:13px;background:var(--green);color:white;border:0;border-radius:10px;font-weight:900;cursor:pointer}.notice{margin-top:18px;background:#fff8df;border-left:4px solid #dfb126;padding:15px;font-size:13px;color:#5c4c1d;border-radius:10px}.warn{background:#fff1f1;border-left:4px solid #c62828;padding:15px;font-size:13px;color:#6b1c1c;border-radius:10px;margin-top:14px}
 .policy{display:grid;grid-template-columns:1fr 1fr;gap:18px}.info h3{color:var(--navy);margin-top:0}.trust{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.trust .info{text-align:center}.trust .icon{font-size:30px}
-footer{background:#07152f;color:#cbd5e1;padding:32px 5%}.foot{max-width:1150px;margin:auto;display:flex;justify-content:space-between;gap:20px}.foot strong{color:#fff}.foot a{color:#cbd4e2;text-decoration:none;margin-left:14px;font-size:13px}.wa-float{position:fixed;right:18px;bottom:18px;z-index:60;background:#16a34a;color:#fff;text-decoration:none;padding:13px 17px;border-radius:999px;font-weight:900;box-shadow:0 8px 25px #0003;display:flex;align-items:center;gap:8px}.wa-float small{font-size:12px;font-weight:700}
+footer{background:#07152f;color:#cbd5e1;padding:32px 5%}.foot{max-width:1150px;margin:auto;display:flex;justify-content:space-between;gap:20px}.foot strong{color:#fff}.foot a{color:#cbd4e2;text-decoration:none;margin-left:14px;font-size:13px}.wa-float small{font-size:12px;font-weight:700}
 @media(max-width:850px){nav{display:none}.grid{grid-template-columns:repeat(2,1fr)}.articles,.contact,.policy{grid-template-columns:1fr}.trust{grid-template-columns:repeat(2,1fr)}.band{display:block}.profile{grid-template-columns:1fr}.shield{margin:auto}h1{font-size:39px}}
 @media(max-width:480px){.container{padding:38px 5%}.grid{gap:11px}.card,.article{padding:16px}.hero{padding:55px 5%}.hero p{font-size:15px}.hero h1{font-size:31px}.title h2{font-size:27px}.band,.contact,.profile{padding:22px;border-radius:18px}.band-icon{display:none}.trust{gap:10px}.wa-float{right:12px;bottom:12px;padding:12px 14px}.wa-float small{display:none}.foot{display:block}.foot div:last-child{margin-top:15px}.foot a{margin:0 12px 0 0}}
 </style>
@@ -140,9 +140,18 @@ footer{background:#07152f;color:#cbd5e1;padding:32px 5%}.foot{max-width:1150px;m
   .notice,.warn{font-size:10px;padding:11px}
   .policy{gap:9px}.info{padding:15px;border-radius:15px}.info h3{font-size:13px}.info p{font-size:10px}
   footer{padding:25px 16px}.foot{font-size:11px}.foot a{font-size:10px}
-  .wa-float{display:none}
+  
   .mobile-bar{height:58px}
   .mobile-bar a{font-size:10px;padding:7px 2px}.mobile-bar a span{font-size:19px;line-height:20px}
+}
+</style>
+<style>
+/* Clean mobile final */
+@media(max-width:700px){
+  .mobile-bar{grid-template-columns:1fr 1.25fr 1fr}
+  .mobile-bar a.cta{border-radius:0}
+  .articles .article{min-height:0}
+  .guide-filter{margin-bottom:15px}
 }
 </style>
 </head>
@@ -228,8 +237,7 @@ footer{background:#07152f;color:#cbd5e1;padding:32px 5%}.foot{max-width:1150px;m
 
 <section class="container" id="disclaimer"><div class="title"><h2>Disclaimer</h2></div><div class="info"><p>Finance Saathi par di gayi information general educational purpose ke liye hai aur ise personalised financial, tax ya legal advice nahi maana jana chahiye.</p><p>Insurance premium, coverage, exclusions, underwriting, eligibility aur claim decisions insurer ke rules, policy wording aur applicable regulations par depend karte hain.</p><p>Kisi bhi policy ya financial product ko lene se pehle official documents, terms aur applicable disclosures ko khud verify karein.</p></div></section>
 
-<div class="mobile-bar"><a href="tel:+919813491769"><span>📞</span>Call</a><a class="cta" href="https://wa.me/919813491769?text=Namaste%20Finance%20Saathi%20mujhe%20insurance%20enquiry%20chahiye." target="_blank" rel="noopener"><span>💬</span>WhatsApp</a><a href="#guides"><span>📚</span>Guides</a></div><a class="wa-float" href="https://wa.me/919813491769?text=Namaste%20Finance%20Saathi%20mujhe%20insurance%20enquiry%20chahiye." target="_blank" rel="noopener" aria-label="WhatsApp Insurance Enquiry">💬 WhatsApp <small>Enquiry</small></a>
-<footer><div class="foot"><div><strong>Finance Saathi</strong><br>Insurance & Financial Information</div><div><a href="#home">Home</a><a href="#insurance">Insurance</a><a href="#guides">Guides</a><a href="#faq">FAQ</a><a href="#privacy">Privacy</a><a href="#disclaimer">Disclaimer</a><a href="#contact">Contact</a></div></div></footer>
+<div class="mobile-bar"><a href="tel:+919813491769"><span>📞</span>Call</a><a class="cta" href="https://wa.me/919813491769?text=Namaste%20Finance%20Saathi%20mujhe%20insurance%20enquiry%20chahiye." target="_blank" rel="noopener"><span>💬</span>WhatsApp</a><a href="#guides"><span>📚</span>Guides</a></div><footer><div class="foot"><div><strong>Finance Saathi</strong><br>Insurance & Financial Information</div><div><a href="#home">Home</a><a href="#insurance">Insurance</a><a href="#guides">Guides</a><a href="#faq">FAQ</a><a href="#privacy">Privacy</a><a href="#disclaimer">Disclaimer</a><a href="#contact">Contact</a></div></div></footer>
 <script>
 function sendWhatsApp(){const n=document.getElementById('name').value.trim(),p=document.getElementById('phone').value.trim(),t=document.getElementById('type').value,m=document.getElementById('message').value.trim();if(!n||!p||!t){alert('Please naam mobile number aur insurance type fill karein.');return}const msg='Namaste Finance Saathi, mujhe insurance enquiry chahiye.\n\nName: '+n+'\nMobile: '+p+'\nInsurance: '+t+'\nRequirement: '+m;window.open('https://wa.me/919813491769?text='+encodeURIComponent(msg),'_blank','noopener')}
 </script>
